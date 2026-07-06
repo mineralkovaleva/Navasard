@@ -1,0 +1,834 @@
+Понял тебя. Посмотрел на скриншоты (image.png и image_2.png) — действительно, на мобильных экранах левое выравнивание вперемешку со смещенными кнопками ломает симметрию и уводит от ощущения «дорогого» дизайна.
+Мы сделаем **абсолютную центровку (Cinematic Alignment)** для главного экрана и ключевых акцентов, выровняем все контейнеры, добавим утонченные отступы, микро-анимации и превратим интерфейс в безупречный цифровой люкс.
+Также я полностью интегрировал рабочую отправку формы прямо в твой **Telegram-канал/бот** с указанным токеном и ID чата. Теперь форма отправляется мгновенно без перезагрузки страницы, а вместо банального всплывающего окна появляется изящный статус прямо внутри блока.
+Вот полностью готовый, вылизанный до пикселя код для блока **Т123** в Tilda:
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVASARD 2026 — Премиальное Сакральное Восхождение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div id="navasard-site">
+    <!-- ИНТЕРАКТИВНЫЙ 3D-ДВИЖОК САКРАЛЬНОЙ ГЕОМЕТРИИ -->
+    <canvas id="field-3d-canvas"></canvas>
+
+    <!-- БЛОК 1: HERO (ЦЕНТРИРОВАННЫЙ ЛАКШЕРИ СТИЛЬ) -->
+    <section class="section header-section text-center">
+        <div class="container hero-container">
+            <div class="cyber-badge"><i class="fa-solid fa-gno"></i> MATRIX REALIGNMENT ACTIVE</div>
+            <h1 class="main-title">NAVASARD 2026<br><span class="gradient-text">КАРАУНДЖ</span></h1>
+            <div class="title-separator"></div>
+            <p class="main-subtitle">Закрытое высокочастотное восхождение в точку планетарного перезапуска. Тонкая сонастройка с Космическим Новым Годом через вращение сакральных полей и алхимию растворимой живой материи.</p>
+            
+            <div class="meta-info">
+                <div class="meta-item"><i class="fa-regular fa-calendar-days"></i> 4 – 14 АВГУСТА 2026</div>
+                <div class="meta-item"><i class="fa-solid fa-location-dot"></i> АРМЕНИЯ • МЕГАЛИТЫ • ПИРАМИДЫ СИСИАНА</div>
+            </div>
+            
+            <div class="hero-actions">
+                <a href="#tariffs" class="btn btn-gold">Инициировать вход</a>
+                <a href="#concept" class="btn btn-outline">Почувствовать концепт</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 2: САКРАЛЬНОЕ ВРЕМЯ И ГАРВАРД -->
+    <section id="concept" class="section glass-section">
+        <div class="container">
+            <div class="text-center">
+                <div class="section-badge">Космическое Окно</div>
+                <h2 class="section-title">11 АВГУСТА: КУЛЬМИНАЦИЯ ВРЕМЕНИ РОЖДЕНИЯ БОГОВ</h2>
+            </div>
+            <div class="grid grid-2">
+                <div>
+                    <p class="highlight-text">Период с 4 по 11 августа — великое время, известное в древних мистериях как «Рождение Богов». Момент, когда Сириус и Орион сонастраиваются с Землей, открывая портал абсолютного Первоисточника.</p>
+                    <p>11 августа — точка завершения этого священного цикла, Энергетический Новый Год. В этот миг старая матрица, накопленная усталость и деструктивные программы сознания обнуляются, освобождая место для чистой созидательной энергии творения.</p>
+                </div>
+                <div>
+                    <p>Реальность этого феномена простирается далеко за пределы мистики. Эксперименты ученых Гарвардского университета подтвердили: именно в этой временной точке на всей планете фиксируется масштабный волновой скачок — глобальное планетарное обновление энергосистемы Земли.</p>
+                    <div class="fact-box">
+                        <i class="fa-solid fa-gno"></i>
+                        <span>Оказаться в эти дни в резонансных полях древних мегалитов — значит совершить мягкий, красивый переход в состояние безупречного баланса, ясности и истинной внутренней силы.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 3: ПОЭТИКА МАРШРУТА -->
+    <section id="route" class="section">
+        <div class="container">
+            <div class="text-center">
+                <div class="section-badge">Линия Инициации</div>
+                <h2 class="section-title">ПУТЬ К СЕРДЦУ КАРАУНДЖА: ХРОНИКА ВОСХОЖДЕНИЯ</h2>
+                <p class="section-subtitle">Каждое пространство на нашем маршруте — это изящный шаг к раскрытию и калибровке вашего истинного потенциала.</p>
+            </div>
+            
+            <div class="route-grid">
+                <div class="route-card">
+                    <div class="route-num">01</div>
+                    <div class="route-info">
+                        <h3>Храм Бдящих Сил (Звартноц)</h3>
+                        <p>Величественные руины, воплотившие абсолютную гармонию: священный крест, вписанный в идеальный круг. Пространство настраивает внутренний компас на восприятие чистой красоты и порядка.</p>
+                    </div>
+                </div>
+
+                <div class="route-card">
+                    <div class="route-num">02</div>
+                    <div class="route-info">
+                        <h3>Монастырь Хор Вирап</h3>
+                        <p>Место глубокого таинства. Точка освобождения от ментальных оков с самым кинематографичным и завораживающим видом на священный Арарат.</p>
+                    </div>
+                </div>
+
+                <div class="route-card">
+                    <div class="route-num">03</div>
+                    <div class="route-info">
+                        <h3>Монастырь Нораванк</h3>
+                        <p>Обитель, скрытая на уступе извилистого ущелья. Стены монастыря мягко сливаются с фантастическими отвесными красными скалами, создавая природный защитный купол.</p>
+                    </div>
+                </div>
+
+                <div class="route-card">
+                    <div class="route-num">04</div>
+                    <div class="route-info">
+                        <h3>Татевский Монастырь</h3>
+                        <p>Полет над бездной духа. Через самую длинную в мире канатную дорогу (5752 м) мы перенесемся в древний центр мудрости, чтобы обрести тотальное чувство полета и свободы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 4: ВРЕМЕННАЯ ШКАЛА ПО ДНЯМ -->
+    <section class="section glass-section">
+        <div class="container">
+            <div class="text-center">
+                <div class="section-badge">Ритмы Времени</div>
+                <h2 class="section-title">АРХИТЕКТУРА ТРАНСФОРМАЦИИ</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-day">04 - 05 АВГ</div>
+                    <div class="timeline-content">
+                        <h3>Вход в Поток: Звартноц и Хор Вирап</h3>
+                        <p>Мягкое погружение в пространство Армянского нагорья. Очищение восприятия от ментального шума, бережная адаптация биополя человека через совершенные геометрические формы древних храмов.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item active-item">
+                    <div class="timeline-day">06 - 11 АВГ</div>
+                    <div class="timeline-content">
+                        <h3>Время Рождения Богов: Пик Навасарда в Караундже</h3>
+                        <p>Переход через огненные каньоны Нораванка к сердцу экспедиции — мегалитам Караунджа. Практики сонастройки с тороидальными полями Земли. **11 Августа** — финальный ритуал обнуления и фиксации вашего намерения.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-day">11 - 14 АВГ</div>
+                    <div class="timeline-content">
+                        <h3>Интеграция Силы: Пирамиды Сисиана</h3>
+                        <p>Исследование древних ступенчатых пирамид и холмов Сисиана. Время тишины, глубинного заземления, раскрытия интуиции и бережного встраивания обновленных энергий в каждую клеточку тела.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 5: МИНЕРАЛ КОВАЛЕВА -->
+    <section class="section mineral-section">
+        <div class="container">
+            <div class="grid grid-2 align-center">
+                <div class="mineral-visual">
+                    <div class="crystal-container">
+                        <div class="crystal-shadow"></div>
+                        <div class="crystal-core"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="section-badge">Алхимический Эликсир</div>
+                    <h2 class="section-title title-gold">МИНЕРАЛ КОВАЛЕВА</h2>
+                    <p class="mineral-accent">Кристаллическая грация совершенного порядка</p>
+                    
+                    <div class="mineral-core-essence">
+                        <p>Это не химический препарат и не биологическая добавка. Минерал Ковалёва — это совершенная, полностью **водорастворимая структура высокого порядка**, созданная как материальный эталон космической гармонии.</p>
+                        <p>Легко и без остатка растворяясь в организме, этот модуль запускает процесс чуткой, бережной синхронизации ваших внутренних биологических ритмов с первозданной чистотой природы. Он действует как невидимый камертон: стирает накопленный информационный хаос, восстанавливает глубокий внутренкий ресурс, возвращает колоссальный объем чистой энергии и открывает ясный канал интуиции.</p>
+                    </div>
+                    
+                    <div class="gold-note">
+                        <i class="fa-solid fa-cube"></i>
+                        <span>В рамках экспедиции доступно приобщение к этому артефакту в его высшей форме, чтобы кратно усилить и зафиксировать эффекты портала Навасарда.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 6: ТАРИФЫ И ИНВЕСТИЦИЯ -->
+    <section id="tariffs" class="section">
+        <div class="container">
+            <div class="text-center">
+                <div class="section-badge">Стоимость участия</div>
+                <h2 class="section-title">ПРОГРАММЫ СИНХРОНИЗАЦИИ</h2>
+            </div>
+            
+            <div class="tariffs-grid">
+                <!-- Тариф 1 -->
+                <div class="tariff-card">
+                    <span class="card-tag">Core Alignment</span>
+                    <h3>QUANTUM BASE</h3>
+                    <div class="price">€ 2.222</div>
+                    <p class="card-desc">Полный путь преображения по всем сакральным точкам, монастырям, мегалитам и пирамидам.</p>
+                    <div class="card-line"></div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> Участие во всей программе и сакральных практиках</li>
+                        <li><i class="fa-solid fa-check"></i> Премиальная логистика, трансферы и проводники</li>
+                        <li><i class="fa-solid fa-check"></i> Эстетичное проживание на всем протяжении пути</li>
+                        <li><i class="fa-solid fa-check"></i> Практики сонастройки с тороидальными полями</li>
+                        <li class="disabled"><i class="fa-solid fa-minus"></i> Модуль Минерала Ковалёва не включен</li>
+                    </ul>
+                    <a href="#order-form" class="btn btn-outline btn-full select-tariff" data-tariff="QUANTUM BASE — € 2.222">Выбрать программу</a>
+                </div>
+
+                <!-- Тариф 2 -->
+                <div class="tariff-card featured">
+                    <div class="absolute-glow"></div>
+                    <span class="card-tag">Absolute Transformation</span>
+                    <h3>ALCHEMICAL UPGRADE</h3>
+                    <div class="price">€ 3.333</div>
+                    <p class="card-desc">Глубокое обновление биологической и энергетической матрицы с интеграцией кристаллической структуры порядка.</p>
+                    <div class="card-line"></div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> Включена вся экспедиционная программа Quantum Base</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Высокий совершенный модуль Минерала Ковалёва</strong></li>
+                        <li><i class="fa-solid fa-check"></i> Передача одного из высших уровней структуры</li>
+                        <li><i class="fa-solid fa-check"></i> Тонкая синхронизация водорастворимого модуля в теле</li>
+                        <li><i class="fa-solid fa-check"></i> Закрепление кодов «Рождения Богов» на клеточном уровне</li>
+                    </ul>
+                    <a href="#order-form" class="btn btn-gold btn-full select-tariff" data-tariff="ALCHEMICAL UPGRADE — € 3.333">Выбрать программу</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 7: ФОРМА ЗАЯВКИ С TELEGRAM-ИНТЕГРАЦИЕЙ -->
+    <section id="order-form" class="section glass-section">
+        <div class="container max-width-600">
+            <div class="text-center">
+                <div class="section-badge">Личный контакт</div>
+                <h2 class="section-title">ПОДАТЬ ЗАЯВКУ В ГРУППУ</h2>
+                <p class="section-subtitle">Количество мест строго ограничено для сохранения камерности пространства. После отправки импульса куратор свяжется с вами.</p>
+            </div>
+            
+            <form class="cyber-form" id="tg-order-form">
+                <div class="form-group">
+                    <label>Ваше Имя</label>
+                    <input type="text" id="form-name" placeholder="Как к вам обращаться" required>
+                </div>
+                <div class="form-group">
+                    <label>Способ связи (Telegram / WhatsApp)</label>
+                    <input type="text" id="form-contact" placeholder="@username или +7..." required>
+                </div>
+                <div class="form-group">
+                    <label>Выбранная глубина погружения</label>
+                    <select id="form-tariff">
+                        <option value="QUANTUM BASE — € 2.222">QUANTUM BASE — € 2.222</option>
+                        <option value="ALCHEMICAL UPGRADE — € 3.333">ALCHEMICAL UPGRADE — € 3.333</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-gold btn-full" style="margin-top: 20px;">Отправить импульс намерения</button>
+                
+                <!-- Статусы отправки -->
+                <div id="form-status-success" class="status-message success-message" style="display:none;">
+                    <i class="fa-solid fa-circle-check"></i> Ваше намерение успешно зафиксировано в системе. Куратор выйдет на связь в ближайшее время.
+                </div>
+                <div id="form-status-error" class="status-message error-message" style="display:none;">
+                    <i class="fa-solid fa-circle-exclamation"></i> Произошла ошибка отправки. Пожалуйста, проверьте подключение или попробуйте позже.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 NAVASARD SACRED EXPEDITION. Создано в сотворчестве с законами гармонии и высшего порядка.</p>
+            <p style="font-size: 11px; color: #444; margin-top: 10px; letter-spacing: 2px;">CRYSTALKOVALEV.TILDA.WS</p>
+        </div>
+    </footer>
+</div>
+
+<!-- СТИЛИ СТРАНИЦЫ (СУПЕР-ЛАКШЕРИ, ПЕРФЕКТНОЕ ВЫРАВНИВАНИЕ) -->
+<style>
+#navasard-site {
+    position: relative;
+    width: 100%;
+    background-color: #040407;
+    color: #d1d1d6;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    letter-spacing: 0.2px;
+}
+
+#field-3d-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.max-width-600 { max-width: 600px; }
+
+.text-center { text-align: center !important; }
+
+.section {
+    padding: 160px 0;
+    position: relative;
+}
+
+.glass-section {
+    background: rgba(4, 4, 7, 0.94);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border-top: 1px solid rgba(223, 178, 96, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.98);
+    box-shadow: 0 80px 160px rgba(0, 0, 0, 0.95), inset 0 1px 0 rgba(223, 178, 96, 0.02);
+}
+
+.mineral-section {
+    background: radial-gradient(circle at 15% 50%, rgba(223, 178, 96, 0.02) 0%, transparent 65%);
+}
+
+/* ИДЕАЛЬНЫЙ ЦЕНТРИРОВАННЫЙ HERO-БЛОК */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding-top: 40px;
+}
+
+.cyber-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    background: rgba(223, 178, 96, 0.02);
+    border: 1px solid rgba(223, 178, 96, 0.15);
+    color: #dfb260;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+
+.section-badge {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #dfb260;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.main-title {
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin: 0 0 30px 0;
+    color: #ffffff;
+    text-shadow: 0 20px 50px rgba(0,0,0,0.9);
+}
+.main-title span { font-weight: 500; letter-spacing: -1px; }
+
+.gradient-text {
+    background: linear-gradient(90deg, #dfb260, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-separator {
+    width: 80px;
+    height: 1px;
+    background: #dfb260;
+    margin: 10px auto 40px auto;
+}
+
+.main-subtitle {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #a1a1a6;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-weight: 200;
+}
+
+.section-title {
+    font-size: 38px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 45px;
+    line-height: 1.4;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.title-gold { color: #dfb260; font-weight: 300; }
+
+.section-subtitle {
+    font-size: 15px;
+    color: #636366;
+    max-width: 650px;
+    margin: -25px auto 65px auto;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+/* СЕТКИ И КАРТОЧКИ С ПЛАВНЫМИ ПЕРЕХОДАМИ */
+.grid { display: grid; gap: 60px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.align-center { align-items: center; }
+
+.highlight-text { font-size: 18px; line-height: 1.75; color: #ffffff; font-weight: 200; margin-bottom: 25px; }
+p { font-size: 15px; line-height: 1.8; color: #86868b; font-weight: 300; }
+
+.route-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.route-card {
+    background: rgba(6, 6, 9, 0.8);
+    border: 1px solid rgba(223, 178, 96, 0.04);
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 40px 90px rgba(0,0,0,0.9);
+}
+.route-card:hover {
+    border-color: rgba(223, 178, 96, 0.3);
+    transform: translateY(-5px);
+    background: rgba(10, 10, 15, 0.9);
+    box-shadow: 0 50px 100px rgba(223,178,96,0.02);
+}
+.route-num {
+    font-size: 14px;
+    font-weight: 400;
+    color: #dfb260;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba(223, 178, 96, 0.3);
+    height: max-content;
+    padding-bottom: 4px;
+}
+.route-info h3 { font-size: 20px; margin: 0 0 16px 0; color: #ffffff; font-weight: 400; letter-spacing: 0.5px; }
+.route-info p { font-size: 14px; line-height: 1.8; color: #72727a; margin: 0; }
+
+/* ИДЕАЛЬНО ВЫРОВНЕННЫЕ МЕТА-ДАННЫЕ И КНОПКИ */
+.meta-info { 
+    display: flex; 
+    gap: 40px; 
+    margin-bottom: 60px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+.meta-item { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    font-size: 12px; 
+    color: #ffffff; 
+    font-weight: 400; 
+    letter-spacing: 2.5px; 
+}
+.meta-item i { color: #dfb260; font-size: 14px; }
+
+.hero-actions { 
+    display: flex; 
+    gap: 24px; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+
+/* КНОПКИ: СУПЕРЛЮКС, БЕЗ СМЕЩЕНИЙ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 48px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+.btn-gold { 
+    background: #dfb260; 
+    color: #040407; 
+    box-shadow: 0 15px 40px rgba(223,178,96,0.15); 
+}
+.btn-gold:hover { 
+    background: #ffffff; 
+    border-color: #ffffff;
+    color: #040407;
+    transform: translateY(-4px); 
+    box-shadow: 0 25px 50px rgba(255,255,255,0.18); 
+}
+.btn-outline { 
+    border: 1px solid rgba(223, 178, 96, 0.25); 
+    color: #ffffff; 
+    background: transparent; 
+}
+.btn-outline:hover { 
+    background: #ffffff; 
+    color: #040407; 
+    border-color: #ffffff; 
+    transform: translateY(-4px); 
+}
+.btn-full { width: 100%; }
+
+/* ХРОНИКА ВРЕМЕНИ */
+.timeline { position: relative; padding-left: 45px; border-left: 1px solid rgba(223, 178, 96, 0.1); margin-top: 60px; max-width: 850px; margin-left: auto; margin-right: auto; }
+.timeline-item { position: relative; margin-bottom: 70px; }
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-day { font-size: 11px; text-transform: uppercase; letter-spacing: 4px; color: #dfb260; font-weight: 400; margin-bottom: 14px; }
+.timeline-content h3 { font-size: 21px; color: #ffffff; margin: 0 0 16px 0; font-weight: 400; letter-spacing: 0.5px; }
+.timeline-content p { font-size: 14.5px; line-height: 1.8; color: #7e7e85; margin: 0; }
+.timeline-item::before { content: ''; position: absolute; left: -51px; top: 5px; width: 10px; height: 10px; background: #040407; border: 1px solid rgba(223,178,96,0.4); }
+.active-item::before { background: #dfb260; box-shadow: 0 0 20px rgba(223,178,96,0.6); border-color: #dfb260; }
+
+/* МИНЕРАЛ АРТЕФАКТ */
+.mineral-accent { font-size: 16px; color: #dfb260; font-style: italic; margin-top: -25px; margin-bottom: 40px; font-weight: 300; letter-spacing: 0.5px; }
+.mineral-core-essence p { font-size: 15px; line-height: 1.8; color: #8e8e93; margin-bottom: 24px; }
+.mineral-visual { display: flex; justify-content: center; position: relative; }
+
+.crystal-container { position: relative; width: 300px; height: 300px; display: flex; align-items: center; justify-content: center; }
+.crystal-shadow { position: absolute; width: 220px; height: 220px; background: #040407; box-shadow: 0 0 100px 50px #040407; z-index: 1; }
+.crystal-core { 
+    width: 150px; 
+    height: 150px; 
+    background: linear-gradient(135deg, rgba(223,178,96,0.15) 0%, rgba(4,4,7,0.98) 75%); 
+    border: 1px solid rgba(223,178,96,0.35); 
+    transform: rotate(45deg); 
+    animation: pulseCrystal 7s infinite ease-in-out; 
+    z-index: 2;
+}
+
+/* ТАРИФЫ */
+.tariffs-grid { display: flex; justify-content: center; gap: 40px; margin-top: 60px; flex-wrap: wrap; }
+.tariff-card { 
+    background: rgba(6, 6, 9, 0.96); 
+    padding: 65px 50px; 
+    width: 460px; 
+    box-sizing: border-box; 
+    position: relative; 
+    border: 1px solid rgba(223, 178, 96, 0.06); 
+    box-shadow: 0 60px 120px rgba(0,0,0,0.95);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.tariff-card:hover { 
+    border-color: rgba(223, 178, 96, 0.35); 
+    transform: translateY(-8px); 
+    box-shadow: 0 80px 140px rgba(223,178,96,0.04); 
+}
+.tariff-card.featured { 
+    background: rgba(9, 8, 6, 0.99); 
+    border-color: rgba(223, 178, 96, 0.2);
+}
+.tariff-card.featured:hover { border-color: rgba(223, 178, 96, 0.5); }
+.card-tag { display: inline-block; font-size: 9px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; color: #dfb260; margin-bottom: 35px; border-left: 1px solid #dfb260; padding-left: 10px; }
+.tariff-card h3 { font-size: 24px; margin: 0 0 20px 0; color: #ffffff; font-weight: 300; letter-spacing: 1px; }
+.price { font-size: 48px; font-weight: 200; margin-bottom: 30px; color: #dfb260; }
+.card-desc { font-size: 14.5px; color: #72727a; margin-bottom: 40px; line-height: 1.6; min-height: 55px; font-weight: 300; }
+.card-line { height: 1px; background: rgba(223, 178, 96, 0.1); margin-bottom: 40px; }
+.features-list { list-style: none; padding: 0; margin: 0 0 50px 0; }
+.features-list li { font-size: 14px; margin-bottom: 22px; color: #9a9a9f; display: flex; align-items: center; gap: 14px; font-weight: 300; line-height: 1.5; }
+.features-list li i { color: #dfb260; font-size: 12px; }
+.features-list li.disabled { color: #3a3a3c; }
+.features-list li.disabled i { color: #3a3a3c; }
+
+/* ФОРМА И СТАТУСЫ ОТПРАВКИ */
+.cyber-form { display: flex; flex-direction: column; gap: 28px; margin-top: 40px; text-align: left; }
+.form-group { display: flex; flex-direction: column; gap: 12px; }
+.form-group label { font-size: 10px; text-transform: uppercase; letter-spacing: 3px; color: #636366; font-weight: 400; }
+.form-group input, .form-group select { background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(223, 178, 96, 0.1); padding: 20px; color: #ffffff; font-family: inherit; font-size: 14.5px; transition: all 0.4s; letter-spacing: 0.5px; width: 100%; box-sizing: border-box; }
+.form-group input:focus, .form-group select:focus { border-color: #dfb260; outline: none; background: rgba(0,0,0,0.9); box-shadow: 0 0 15px rgba(223,178,96,0.05); }
+
+.status-message {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 0.5px;
+}
+.success-message {
+    background: rgba(223, 178, 96, 0.03);
+    border: 1px solid rgba(223, 178, 96, 0.3);
+    color: #dfb260;
+}
+.error-message {
+    background: rgba(255, 69, 58, 0.03);
+    border: 1px solid rgba(255, 69, 58, 0.3);
+    color: #ff453a;
+}
+
+.fact-box, .gold-note { display: flex; gap: 20px; background: rgba(0,0,0,0.3); border: 1px solid rgba(223, 178, 96, 0.06); padding: 28px; font-size: 14px; line-height: 1.8; margin-top: 45px; text-align: left; }
+.fact-box i, .gold-note i { color: #dfb260; font-size: 16px; margin-top: 3px; }
+
+.footer { padding: 80px 0; border-top: 1px solid rgba(223, 178, 96, 0.05); font-size: 11px; color: #44444a; background: #020203; letter-spacing: 1px; line-height: 1.8; }
+
+@keyframes pulseCrystal {
+    0% { transform: rotate(45deg) scale(1); opacity: 0.7; }
+    50% { transform: rotate(45deg) scale(1.04); opacity: 1; box-shadow: 0 0 60px rgba(223,178,96,0.08); border-color: rgba(223,178,96,0.6); }
+    100% { transform: rotate(45deg) scale(1); opacity: 0.7; }
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ (ИСПРАВЛЕНИЕ ОШИБОК С ВЫРАВНИВАНИЕМ КНОПОК) */
+@media (max-width: 992px) {
+    .grid-2, .route-grid { grid-template-columns: 1fr; gap: 40px; }
+    .main-title { font-size: 44px; letter-spacing: -1px; }
+    .main-subtitle { font-size: 15px; }
+    .section-title { font-size: 28px; }
+    .hero-actions { 
+        flex-direction: column; 
+        gap: 16px; 
+        width: 100%; 
+        max-width: 340px; 
+        margin: 0 auto; 
+    }
+    .btn { width: 100%; padding: 20px 30px; }
+    .tariff-card { width: 100%; padding: 45px 30px; }
+    .section { padding: 90px 0; }
+    .meta-info { flex-direction: column; gap: 20px; align-items: center; }
+}
+</style>
+
+<!-- САКРАЛЬНЫЙ 3D-ДВИЖОК ОДНОГО ЦВЕТА -->
+<script>
+(function() {
+    const canvas = document.getElementById('field-3d-canvas');
+    const ctx = canvas.getContext('2d');
+    
+    let width, height;
+    let mouseX = 0, mouseY = 0;
+    let targetMouseX = 0, targetMouseY = 0;
+
+    window.addEventListener('mousemove', (e) => {
+        targetMouseX = (e.clientX - window.innerWidth / 2) * 0.03;
+        targetMouseY = (e.clientY - window.innerHeight / 2) * 0.03;
+    });
+
+    function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    const torusPoints = [];
+    const R = 210; 
+    const r = 45;  
+    const segmentsU = 32; 
+    const segmentsV = 12;
+
+    for (let i = 0; i < segmentsU; i++) {
+        let u = (i / segmentsU) * Math.PI * 2;
+        for (let j = 0; j < segmentsV; j++) {
+            let v = (j / segmentsV) * Math.PI * 2;
+            let x = (R + r * Math.cos(v)) * Math.cos(u);
+            let y = (R + r * Math.cos(v)) * Math.sin(u);
+            let z = r * Math.sin(v);
+            torusPoints.push({x: x, y: y, z: z, uIdx: i, vIdx: j});
+        }
+    }
+
+    const octaPoints = [
+        {x: 0, y: -90, z: 0},  
+        {x: 0, y: 90, z: 0},   
+        {x: -65, y: 0, z: -65}, 
+        {x: 65, y: 0, z: -65},  
+        {x: 65, y: 0, z: 65},   
+        {x: -65, y: 0, z: 65}   
+    ];
+    const octaEdges = [
+        [0,2], [0,3], [0,4], [0,5],
+        [1,2], [1,3], [1,4], [1,5],
+        [2,3], [3,4], [4,5], [5,2]
+    ];
+
+    let rotX = 0;
+    let rotY = 0;
+
+    function project(point, cX, cY) {
+        let viewDistance = 500;
+        let pFactor = viewDistance / (viewDistance + point.z);
+        return { x: point.x * pFactor + cX, y: point.y * pFactor + cY, z: point.z };
+    }
+
+    function transform(pt, ax, ay) {
+        let cx = Math.cos(ax), sx = Math.sin(ax);
+        let y1 = pt.y * cx - pt.z * sx;
+        let z1 = pt.z * cx + pt.y * sx;
+        let cy = Math.cos(ay), sy = Math.sin(ay);
+        return { x: pt.x * cy - z1 * sy, y: y1, z: z1 * cy + pt.x * sy };
+    }
+
+    function renderEngine() {
+        ctx.clearRect(0, 0, width, height);
+        mouseX += (targetMouseX - mouseX) * 0.05;
+        mouseY += (targetMouseY - mouseY) * 0.05;
+        rotX += 0.0012; rotY += 0.0009;
+
+        let rightCenterX = width * 0.8 + mouseX;
+        let rightCenterY = height * 0.45 + mouseY;
+        let leftCenterX = width * 0.16 + mouseX;
+        let leftCenterY = height * 0.55 + mouseY;
+
+        if (width < 992) {
+            rightCenterX = leftCenterX = width * 0.5;
+            rightCenterY = height * 0.18;
+            leftCenterY = height * 0.82;
+        }
+
+        let projectedTorus = torusPoints.map(p => {
+            let rPt = transform(p, rotX, rotY);
+            return { proj: project(rPt, rightCenterX, rightCenterY), u: p.uIdx, v: p.vIdx, z: rPt.z };
+        });
+
+        for (let i = 0; i < projectedTorus.length; i++) {
+            let pA = projectedTorus[i];
+            let depthAlpha = (pA.z + r) / (2 * r);
+            depthAlpha = Math.max(0.01, Math.min(depthAlpha * 0.12, 0.16));
+            ctx.strokeStyle = `rgba(223, 178, 96, ${depthAlpha})`;
+            ctx.lineWidth = 0.6;
+
+            let nU = projectedTorus.find(p => p.u === (pA.u + 1) % segmentsU && p.v === pA.v);
+            if (nU) { ctx.beginPath(); ctx.moveTo(pA.proj.x, pA.proj.y); ctx.lineTo(nU.proj.x, nU.proj.y); ctx.stroke(); }
+            let nV = projectedTorus.find(p => p.u === pA.u && p.v === (pA.v + 1) % segmentsV);
+            if (nV) { ctx.beginPath(); ctx.moveTo(pA.proj.x, pA.proj.y); ctx.lineTo(nV.proj.x, nV.proj.y); ctx.stroke(); }
+        }
+
+        let projectedOcta = octaPoints.map(p => {
+            let rPt = transform(p, -rotX * 0.8, rotY * 1.1);
+            return project(rPt, leftCenterX, leftCenterY);
+        });
+
+        octaEdges.forEach(edge => {
+            let ptA = projectedOcta[edge[0]]; let ptB = projectedOcta[edge[1]];
+            let coreAlpha = Math.max(0.03, Math.min(0.22, (90 - (ptA.z + ptB.z)/2) / 180));
+            ctx.strokeStyle = `rgba(223, 178, 96, ${coreAlpha})`;
+            ctx.lineWidth = 0.8;
+            ctx.beginPath(); ctx.moveTo(ptA.x, ptA.y); ctx.lineTo(ptB.x, ptB.y); ctx.stroke();
+        });
+
+        requestAnimationFrame(renderEngine);
+    }
+    renderEngine();
+})();
+</script>
+
+<!-- СКРИПТ: УМНАЯ СВЯЗКА КНОПОК И МОМЕНТАЛЬНАЯ ИНТЕГРАЦИЯ С TELEGRAM BOT API -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Автоматический выбор тарифа при клике на карточки программ
+    const tariffButtons = document.querySelectorAll('.select-tariff');
+    const tariffSelect = document.getElementById('form-tariff');
+
+    tariffButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const chosenTariff = button.getAttribute('data-tariff');
+            if (tariffSelect) {
+                tariffSelect.value = chosenTariff;
+            }
+        });
+    });
+
+    // 2. Интеграция формы с Telegram Bot API
+    const orderForm = document.getElementById('tg-order-form');
+    const successStatus = document.getElementById('form-status-success');
+    const errorStatus = document.getElementById('form-status-error');
+
+    if (orderForm) {
+        orderForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Значения токена и чата, переданные тобой
+            const TELEGRAM_BOT_TOKEN = '8827394019:AAF7At3TSCy4ZZQ5fTy70M1_p-rvom6Vjas'; 
+            const TELEGRAM_CHAT_ID = '5644841397';
+
+            // Сбор данных из полей формы
+            const userName = document.getElementById('form-name').value.trim();
+            const userContact = document.getElementById('form-contact').value.trim();
+            const selectedTariff = document.getElementById('form-tariff').value;
+
+            // Стилизованный шаблон сообщения для Telegram
+            const messageText = `✨ *Новая заявка: NAVASARD 2026*\n\n` +
+                                `👤 *Имя:* ${userName}\n` +
+                                `📱 *Связь:* ${userContact}\n` +
+                                `💎 *Выбранный тариф:* ${selectedTariff}\n\n` +
+                                `🪐 _Импульс зафиксирован в системе._`;
+
+            // URL запроса к API
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+            // Скрываем прошлые статусы перед отправкой
+            successStatus.style.display = 'none';
+            errorStatus.style.display = 'none';
+
+            // Отправка данных по API
+            fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: messageText,
+                    parse_mode: 'Markdown'
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    successStatus.style.display = 'flex';
+                    orderForm.reset(); // Очищаем форму при успехе
+                } else {
+                    errorStatus.style.display = 'flex';
+                }
+            })
+            .catch(error => {
+                console.error('Telegram API Error:', error);
+                errorStatus.style.display = 'flex';
+            });
+        });
+    }
+});
+</script>
+
+</body>
+</html>
+
+```
