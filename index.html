@@ -745,11 +745,7 @@ p { font-size: 15px; line-height: 1.8; color: #86868b; font-weight: 300; }
         requestAnimationFrame(renderEngine);
     }
     renderEngine();
-})();
-</script>
-
-<!-- СКРИПТ: УМНАЯ СВЯЗКА КНОПОК И МОМЕНТАЛЬНАЯ ИНТЕГРАЦИЯ С TELEGRAM BOT API -->
-<script>
+})();<script>
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Автоматический выбор тарифа при клике на карточки программ
     const tariffButtons = document.querySelectorAll('.select-tariff');
@@ -773,55 +769,59 @@ document.addEventListener('DOMContentLoaded', () => {
         orderForm.addEventListener('submit', function(event) {
             event.preventDefault();
 
-            // Значения токена и чата, переданные тобой
+            // Токен и чат ID
             const TELEGRAM_BOT_TOKEN = '8756417206:AAFNt2JdSZrF-fo5hpHTyI8mMIrvvlF4ddU'; 
             const TELEGRAM_CHAT_ID = '1850712268';
 
-            // Сбор данных из полей формы
-            const userName = document.getElementById('form-name').value.trim();
-            const userContact = document.getElementById('form-contact').value.trim();
-            const selectedTariff = document.getElementById('form-tariff').value;
+            // Сбор и экранирование базовых HTML-символов во избежание конфликтов
+            const escapeHTML = (str) => str.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-            // Стилизованный шаблон сообщения для Telegram
-            const messageText = `✨ *Новая заявка: NAVASARD 2026*\n\n` +
-                                `👤 *Имя:* ${userName}\n` +
-                                `📱 *Связь:* ${userContact}\n` +
-                                `💎 *Выбранный тариф:* ${selectedTariff}\n\n` +
-                                `🪐 _Импульс зафиксирован в системе._`;
+            const userName = escapeHTML(document.getElementById('form-name').value.trim());
+            const userContact = escapeHTML(document.getElementById('form-contact').value.trim());
+            const selectedTariff = escapeHTML(document.getElementById('form-tariff').value);
 
-            // URL запроса к API
+            // Безопасный шаблон сообщения на HTML
+            const messageText = `✨ <b>Новая заявка: NAVASARD 2026</b>\n\n` +
+                                `👤 <b>Имя:</b> ${userName}\n` +
+                                `📱 <b>Связь:</b> ${userContact}\n` +
+                                `💎 <b>Выбранный тариф:</b> ${selectedTariff}\n\n` +
+                                `🪐 <i>Импульс зафиксирован в системе.</i>`;
+
             const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
-            // Скрываем прошлые статусы перед отправкой
             successStatus.style.display = 'none';
             errorStatus.style.display = 'none';
 
-            // Отправка данных по API
             fetch(url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     chat_id: TELEGRAM_CHAT_ID,
                     text: messageText,
-                    parse_mode: 'Markdown'
+                    parse_mode: 'HTML' // Переключено на HTML
                 })
             })
             .then(response => {
                 if (response.ok) {
                     successStatus.style.display = 'flex';
-                    orderForm.reset(); // Очищаем форму при успехе
+                    orderForm.reset(); 
                 } else {
+                    // Выводим ответ сервера в консоль для точной диагностики
+                    response.json().then(errData => {
+                        console.error('Telegram Server Error Details:', errData);
+                    });
                     errorStatus.style.display = 'flex';
                 }
             })
             .catch(error => {
-                console.error('Telegram API Error:', error);
+                console.error('Network/Fetch Error:', error);
                 errorStatus.style.display = 'flex';
             });
         });
     }
 });
 </script>
+
 
 </body>
 </html>
